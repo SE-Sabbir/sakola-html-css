@@ -49,7 +49,6 @@ p{
     line-height: 1.5;
     font-weight: 400;
     line-height: 1.6;
-    width: 65%;
 }
 .btn{
     padding: 16px 38px;
@@ -123,6 +122,9 @@ nav ul li a:hover , .menu-btn a:hover {
     width: 100%;
 }
 .hero-text h1.heading {
+    width: 60%;
+}
+.hero-text p {
     width: 60%;
 }
 .btn-group {
@@ -244,6 +246,9 @@ nav ul li a:hover , .menu-btn a:hover {
 .text-content .heading {
     width: 50%;
 }
+.school-section .text-content p {
+    width: 65%;
+}
 .text-content .btn {
     margin-top: 2.5rem;
 }
@@ -254,4 +259,87 @@ nav ul li a:hover , .menu-btn a:hover {
 .studying-section h2.heading {
     width: 45%;
     margin: 0 auto;
+}
+.group-card {
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+.course-card {
+    background: #fff;
+    border-radius: 25px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.course-card:hover {
+    transform: translateY(-10px);
+}
+.card-image {
+    width: 258px;
+    height: 235px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 10px auto;
+}
+.card-image img{
+    transform: scale(1.1);
+}
+.course-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #040931;
+    padding-top: 24px;
+    padding-bottom: 8px;
+}
+.star-rating {
+    padding-top: 14px;
+    font-size: 20px;
+    color: #FDC350;
+}
+/* -------newsletter section------ */
+.newsletter {
+    position: relative;
+    height: 450px;
+    background: url(../images/news-letter.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.newsletter .overlay-bg {
+    background-color: #000D83d7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.newsletter-content{
+    text-align: center;
+    color: #fff;
+}
+.newsletter-content h2{
+    font-size: var(--heading-font-size);
+    font-weight: bold;
+}
+.newsletter-content p {
+    color: #fff;
+    padding: 28px 0 50px 0;
+}
+.newsletter-content .btn {
+    background-color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+.newsletter-content .btn:hover{
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+
 }
