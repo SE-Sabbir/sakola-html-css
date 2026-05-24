@@ -15,7 +15,7 @@ a{
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 140px 20px 0 20px;
 }
 :root{
     --primary-color:#000D83;
@@ -49,6 +49,7 @@ p{
     line-height: 1.5;
     font-weight: 400;
     line-height: 1.6;
+    width: 65%;
 }
 .btn{
     padding: 16px 38px;
@@ -111,8 +112,9 @@ nav ul li a:hover , .menu-btn a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 92vh;
+    height: 95vh;
     gap: 2rem;
+    padding-top: 0;
 }
 .hero-img {
     width: 50%;
@@ -121,9 +123,6 @@ nav ul li a:hover , .menu-btn a:hover {
     width: 100%;
 }
 .hero-text h1.heading {
-    width: 60%;
-}
-.hero-text p{
     width: 60%;
 }
 .btn-group {
@@ -180,11 +179,13 @@ nav ul li a:hover , .menu-btn a:hover {
 }
 /* -------about section------- */
 .about-section {
-    margin: 140px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+}
+.about-info .heading {
+    width: 65%;
 }
 .about-img , .about-info {
     width: 50%;
@@ -233,4 +234,24 @@ nav ul li a:hover , .menu-btn a:hover {
 }
 .arrow-icon{
     margin-left: auto;
+}
+/* ---------school section---------- */
+.school-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-content .heading {
+    width: 50%;
+}
+.text-content .btn {
+    margin-top: 2.5rem;
+}
+/* ---------studying section------- */
+.studying-section .text-content {
+    text-align: center;
+}
+.studying-section h2.heading {
+    width: 45%;
+    margin: 0 auto;
 }
