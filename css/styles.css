@@ -8,6 +8,9 @@
     text-decoration: none;
     list-style: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 a{
     color: inherit;
 }
@@ -15,7 +18,7 @@ a{
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 140px 20px 0 20px;
+    padding: 0 20px;
 }
 :root{
     --primary-color:#000D83;
@@ -111,7 +114,7 @@ nav ul li a:hover , .menu-btn a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 95vh;
+    height: 100vh;
     gap: 2rem;
     padding-top: 0;
 }
@@ -185,6 +188,7 @@ nav ul li a:hover , .menu-btn a:hover {
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+    padding-top: 140px;
 }
 .about-info .heading {
     width: 65%;
@@ -213,6 +217,7 @@ nav ul li a:hover , .menu-btn a:hover {
 }
 .why-us-box:hover{
     transform: scale(1.05);
+    color: var(--secondary-color);
 }
 .icon-text{
     display: flex;
@@ -242,6 +247,7 @@ nav ul li a:hover , .menu-btn a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 140px;
 }
 .text-content .heading {
     width: 50%;
@@ -253,6 +259,9 @@ nav ul li a:hover , .menu-btn a:hover {
     margin-top: 2.5rem;
 }
 /* ---------studying section------- */
+.studying-section {
+    padding: 140px 0;
+}
 .studying-section .text-content {
     text-align: center;
 }
@@ -342,4 +351,45 @@ nav ul li a:hover , .menu-btn a:hover {
     background-color: transparent;
     border: 1px solid var(--secondary-color);
 
+}
+/* ------footer------ */
+.footer-section {
+    margin-top: 140px;
+    background-color: #F1F6FF;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+.footer-content{
+    display: flex;
+    align-items:start;
+    justify-content: space-between;
+}
+.about-company p{
+    width: 260px;
+    padding: 24px 0 32px 0;
+}
+.about-company .social-media {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.about-company .social-media a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+.navigation-list ul {
+    padding-top: 24px;
+    font-weight: 600;
+    color: #040931;
+}
+.navigation-list ul li {
+    padding-top: 16px;
+    font-weight: 400;
+    color: var(--primary-text-color);
 }
